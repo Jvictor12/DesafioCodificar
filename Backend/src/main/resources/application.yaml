@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/desafio_codificar}
+    username: ${DB_USERNAME:desafio}
+    password: ${DB_PASSWORD:desafio}
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL_AUTO:update}
