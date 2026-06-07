@@ -7,6 +7,51 @@ Sistema web para cadastrar, atribuir, acompanhar, atualizar e excluir chamados. 
 - Docker Compose para executar o backend e o PostgreSQL.
 - Swagger/OpenAPI para explorar e testar os endpoints.
 
+## Tecnologias e ferramentas utilizadas
+
+### Backend
+
+- **Java 26:** linguagem principal da aplicação.
+- **Spring Boot 4:** estrutura e configuração da API.
+- **Spring Web MVC:** criação dos controllers e endpoints REST.
+- **Spring Data JPA:** acesso aos dados por meio dos repositórios.
+- **Hibernate:** mapeamento e persistência das entidades no banco.
+- **Jakarta Validation e Hibernate Validator:** validação dos dados, incluindo nome obrigatório e CPF válido.
+- **Lombok:** redução de código repetitivo nas entidades, serviços e controllers.
+- **Gradle e Gradle Wrapper:** gerenciamento de dependências, testes e build do backend.
+
+### Frontend
+
+- **React 19:** construção da interface por componentes.
+- **TypeScript:** tipagem dos dados e das operações realizadas pela interface.
+- **Vite 8:** servidor de desenvolvimento e processo de build do frontend.
+- **Lucide React:** biblioteca de ícones utilizada na interface.
+- **CSS:** estilização responsiva da aplicação.
+- **ESLint:** análise estática e padronização do código frontend.
+- **npm:** gerenciamento das dependências e scripts do frontend.
+
+### Banco de dados e infraestrutura
+
+- **PostgreSQL 17:** armazenamento dos responsáveis e chamados.
+- **Docker:** criação de uma imagem executável do backend.
+- **Docker Compose:** execução integrada da API e do PostgreSQL.
+- **Variáveis de ambiente (`.env`):** configuração local de portas, banco de dados e credenciais sem expor dados sensíveis no repositório.
+
+### Testes, qualidade e documentação
+
+- **JUnit 5:** execução dos testes automatizados do backend.
+- **Mockito:** criação de mocks para testes unitários dos serviços.
+- **Spring Boot Test:** suporte aos testes da aplicação Spring.
+- **JaCoCo:** geração e verificação da cobertura de testes.
+- **Swagger UI, OpenAPI e Springdoc:** documentação e teste interativo dos endpoints.
+- **Git e GitHub:** versionamento e compartilhamento do código-fonte.
+
+### Justificativa das escolhas
+
+Escolhi **React com Vite** para o frontend porque recentemente participei de um bootcamp focado nessas tecnologias. Atualmente, essa é a combinação com a qual estou mais familiarizado para desenvolver interfaces web. O React permitiu organizar a aplicação em uma interface interativa e orientada a componentes, enquanto o Vite forneceu um ambiente de desenvolvimento simples, rápido e com configuração de proxy para comunicação com o backend.
+
+Escolhi **Java e o ecossistema Spring** para o backend porque Java é minha linguagem principal e a tecnologia com a qual tenho maior domínio. Com Java, Spring Boot e seus frameworks complementares, consigo implementar todas as partes necessárias do sistema, incluindo API REST, regras de negócio, validação, persistência, tratamento de erros, testes e documentação. Essa escolha também permitiu manter uma arquitetura organizada em controllers, services, repositories e entities.
+
 ## Estrutura do projeto
 
 ```text
