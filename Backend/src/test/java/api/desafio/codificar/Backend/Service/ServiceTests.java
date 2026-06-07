@@ -7,6 +7,7 @@ import api.desafio.codificar.Backend.Exceptions.ResourceNotFoundException;
 import api.desafio.codificar.Backend.Records.ResponsavelRecord;
 import api.desafio.codificar.Backend.Repository.ChamadoRepository;
 import api.desafio.codificar.Backend.Repository.ResponsavelRepository;
+import api.desafio.codificar.Backend.enums.Status;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -69,6 +70,8 @@ class ServiceTests {
         assertSame(chamado, chamadoService.update(id, chamado));
         assertEquals(id, chamado.getId());
 
+        chamado.setStatus(Status.Fechado);
+        when(chamadoRepository.findById(id)).thenReturn(Optional.of(chamado));
         chamadoService.delete(id);
         verify(chamadoRepository).deleteById(id);
     }

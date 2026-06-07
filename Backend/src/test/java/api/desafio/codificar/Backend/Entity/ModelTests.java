@@ -25,16 +25,12 @@ class ModelTests {
         first.setId(id);
         first.setCreatedDate(now);
         first.setLastModifiedDate(now);
-        first.setCreatedByClient("creator");
-        first.setModifiedByClient("modifier");
         sameId.setId(id);
         different.setId(UUID.randomUUID());
 
         assertEquals(id, first.getId());
         assertEquals(now, first.getCreatedDate());
         assertEquals(now, first.getLastModifiedDate());
-        assertEquals("creator", first.getCreatedByClient());
-        assertEquals("modifier", first.getModifiedByClient());
         assertEquals(first, first);
         assertEquals(first, sameId);
         assertNotEquals(first, different);
