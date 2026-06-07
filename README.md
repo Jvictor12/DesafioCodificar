@@ -48,9 +48,9 @@ Sistema web para cadastrar, atribuir, acompanhar, atualizar e excluir chamados. 
 
 ### Justificativa das escolhas
 
-Escolhi **React com Vite** para o frontend porque recentemente participei de um bootcamp focado nessas tecnologias. Atualmente, essa é a combinação com a qual estou mais familiarizado para desenvolver interfaces web. O React permitiu organizar a aplicação em uma interface interativa e orientada a componentes, enquanto o Vite forneceu um ambiente de desenvolvimento simples, rápido e com configuração de proxy para comunicação com o backend.
+Escolhi **React com Vite** para o frontend porque recentemente participei de um bootcamp focado nessas tecnologias. Atualmente, essa é a combinação com a qual estou mais familiarizado para desenvolver interfaces web. Eu sinto uma facilidade muito grande para interagir com aplicações usando React, provavelmente por ter sido acompanhado por um profissional durante o bootcamp para esclarecer minhas dúvidas.
 
-Escolhi **Java e o ecossistema Spring** para o backend porque Java é minha linguagem principal e a tecnologia com a qual tenho maior domínio. Com Java, Spring Boot e seus frameworks complementares, consigo implementar todas as partes necessárias do sistema, incluindo API REST, regras de negócio, validação, persistência, tratamento de erros, testes e documentação. Essa escolha também permitiu manter uma arquitetura organizada em controllers, services, repositories e entities.
+Escolhi **Java e o ecossistema Spring** para o backend porque Java é minha linguagem principal e a tecnologia com a qual tenho maior domínio. Com Java, Spring Boot e seus frameworks complementares, consigo implementar todas as partes necessárias do sistema, incluindo API REST, regras de negócio, validação, persistência, tratamento de erros, testes e documentação. Essa escolha também permitiu manter uma arquitetura organizada em controllers, services, repositories e entities, utilizei de padrões como SOLID e Design Patterns também.
 
 ## Estrutura do projeto
 
